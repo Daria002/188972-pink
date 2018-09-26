@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Бабина](https://up.htmlacademy.ru/adaptive/15/user/188972).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Прокопеня](https://up.htmlacademy.ru/adaptive/15/user/102998).
 
 ---
 
