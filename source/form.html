@@ -7,22 +7,23 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class = "page-header__logo-image" src="#" width="xx" height="xx" alt="Pink">
+      <a href = "index.html" class="page-header__logo">
+        <img class = "page-header__logo-image" src="#" width="0" height="0" alt="Pink">
       </a>
-      <nav class = "main-nav">
+      <nav class = "page-header__nav main-nav">
+        <button type = "button" class = "main-nav__button"></button>
         <ul class = "main-nav__list site-list">
           <li class = "site-list__item">
-            <a href = "#">Главная</a>
+            <a href = "index.html">Главная</a>
           </li>
           <li class = "site-list__item">
-            <a href = "#">Фотографии</a>
+            <a href = "photo.html">Фотографии</a>
+          </li>
+          <li class = "site-list__item site-list__item--current">
+            <a>Конкурс</a>
           </li>
           <li class = "site-list__item">
-            <a href = "#">Конкурс</a>
-          </li>
-          <li class = "site-list__item">
-            <a href = "#">HTML ACADEMY</a>
+            <a href = "https://htmlacademy.ru/">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -33,21 +34,22 @@
 
     <main class = "form-page">
       <section class = "form">
+        <h2 class="visually-hidden">Анкета для конкурса</h2>
         <p class = "form__description">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
         <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class = "compepition-form__login login-group">
-            <label class="login-group__surname" for="compepition-surname">Фамилия:</label>
+            <label class="login-group__surname field-title" for="compepition-surname">Фамилия:</label>
             <input type="text" id="compepition-surname" name="compepition-surname" placeholder="Укажите фамилию *">
-            <label class="login-group__name" for="compepition-name">Имя:</label>
+            <label class="login-group__name field-title" for="compepition-name">Имя:</label>
             <input type="text" id="compepition-name" name="compepition-name" placeholder="Введите ваше имя *">
-            <label class="login-group__patronymic" for="compepition-patronymic">Отчество:</label>
+            <label class="login-group__patronymic field-title" for="compepition-patronymic">Отчество:</label>
             <input type="text" id="compepition-patronymic" name="compepition-patronymic" placeholder="Ну и отчество тоже">
           </fieldset>
 
           <fieldset class = "competition-form__checkbox attainment-group">
-            <legend>
+            <legend class = "field-title">
               Ваши безбашенные достижения в путешествии
             </legend>
             <ul class = "attainment-group__list">
@@ -79,33 +81,33 @@
           </fieldset>
           <fieldset class = "compepition-form__contacts contacts-group">
             <label class="contacts-group__phone" for="compepition-phone">Номер телефона:</label>
-            <input type="text" id="compepition-phone" name="compepition-phone" placeholder="Номер, пожалуйста">
+            <input type="tel" id="compepition-phone" name="compepition-phone" placeholder="Номер, пожалуйста">
             <label class="contacts-group__name" for="compepition-email">Адрес почты:</label>
-            <input type="text" id="compepition-email" name="compepition-email" placeholder="Введите почту *">
+            <input type="email" id="compepition-email" name="compepition-email" placeholder="Введите почту *">
           </fieldset>
 
           <fieldset class = "competition-form__checkbox os-group">
-            <legend>
+            <legend class = "field-title">
               С каким приложением путешествовали?
             </legend>
             <ul class = "os-group__list">
               <li>
-                  <input type="radio" id="ios" value="ios" name="ios-item" class="os-group__item" checked>
+                  <input type="radio" id="ios" value="ios" name="os-item" class="os-group__item" checked>
                   <label for="ios">Pink для iOS</label>
               </li>
               <li>
-                  <input type="radio" id="android" value="android" name="android-item" class="os-group__item">
+                  <input type="radio" id="android" value="android" name="os-item" class="os-group__item">
                   <label for="android">Pink для Android</label>
               </li>
               <li>
-                  <input type="radio" id="windows" value="windows" name="windows-item" class="os-group__item">
+                  <input type="radio" id="windows" value="windows" name="os-item" class="os-group__item">
                   <label for="windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class = "competition-form__checkbox emotions-form">
-            <label for = "message">
+            <label for = "message" class = "field-title">
               Опишите свои эмоции
             </label>
             <textarea class = "emotions-form__message" name = "message" id = "message" rows = "6" cols = "15" placeholder = "Можно прям в красках, не стесняясь в выражениях">
@@ -126,7 +128,7 @@
 
     </main>
     <footer class = "page-footer">
-      <img class = "page-footer__logo" src = "#" width = "#" height = "#">
+      <a href = "index.html"><img class = "page-footer__logo" src = "#" width = "0" height = "0" alt = "Логотип"></a>
       <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -142,8 +144,18 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <img class = "page-footer__academy-logo" src = "#" width = "#" height = "#" alt = "HTML Academy">
+          <a href = "https://htmlacademy.ru/intensive/adaptive"><img class = "page-footer__academy-logo" src = "#" width = "0" height = "0" alt = "HTML Academy"></a>
         </div>
     </footer>
+    <section class = "modal modal-error">
+      <h3 class = "modal-error__title">Что-то пошло не так!</h3>
+      <p class = "modal-error__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button type = "button" class = "modal-error__button">OK</button>
+    </section>
+    <section class = "modal modal-confirmation">
+      <h3 class = "modal-confirmation__title">Ваша заявка отправлена</h3>
+      <p class = "modal-confirmation__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button type = "button" class = "modal-confirmation__button">Закрыть окно</button>
+    </section>
   </body>
 </html>

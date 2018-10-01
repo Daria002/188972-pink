@@ -8,21 +8,22 @@
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class = "page-header__logo-image" src="#" width="xx" height="xx" alt="Pink">
+        <img class = "page-header__logo-image" src="#" width="0" height="0" alt="Pink">
       </a>
-      <nav class = "main-nav">
+      <nav class = "page-header__nav main-nav">
+        <button type = "button" class = "main-nav__button"></button>
         <ul class = "main-nav__list site-list">
-          <li class = "site-list__item">
-            <a href = "#">Главная</a>
+          <li class = "site-list__item site-list__item--current">
+            <a>Главная</a>
           </li>
           <li class = "site-list__item">
-            <a href = "#">Фотографии</a>
+            <a href = "photo.html">Фотографии</a>
           </li>
           <li class = "site-list__item">
-            <a href = "#">Конкурс</a>
+            <a href = "form.html">Конкурс</a>
           </li>
           <li class = "site-list__item">
-            <a href = "#">HTML ACADEMY</a>
+            <a href = "https://htmlacademy.ru/">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -33,24 +34,20 @@
     <main class = "main-page">
       <h1 class="visually-hidden">Приложение "Pink" — взгляни по-новому на привычные вещи</h1>
       <section class = "download-app">
-        <button class = "download-app__button button"></button>
-        <ul class = "download-app__list os-list">
-          <li class = "os-list__item">
-            <img class = "os-list__item--apple" src = "#" width = "#" height ="#" alt = "#">
-          </li>
-          <li class = "os-list__item">
-            <img class = "os-list__item--android" src = "#" width = "#" height ="#" alt = "#">
-          </li>
-          <li class = "os-list__item">
-            <img class = "os-list__item--microsoft" src = "#" width = "#" height ="#" alt = "#">
-          </li>
-        </ul>
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <a href = "https://itunes.apple.com" class = "download-app__button button">Скачать приложение</a>
+        <div class = "download-app__list os-list">
+            <a class = "os-list__item os-list__item--apple" href = "https://itunes.apple.com"></a>
+            <a class = "os-list__item os-list__item--android" href = "https://play.google.com"></a>
+            <a class = "os-list__item os-list__item--microsoft" href = "https://www.microsoft.com/store/"></a>
+        </div>
         <p class = "download-app__description">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class = "advantages">
-        <p class = "advantages__rhetoric advantages__rhetoric--first"></p> <!--придумать класс получше-->
-        <p class = "advantages__rhetoric advantages__rhetoric--second"></p>
+        <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+        <p class = "advantages__rhetoric advantages__rhetoric--first">Устали от серости мегаполиса?</p>
+        <p class = "advantages__rhetoric advantages__rhetoric--second">Нам есть, что вам предложить!</p>
         <ul class = "advantages__list">
           <li class = "advantages__item advantages__item--mood">
             <h3 class = "advantages__item--header">Поднимает настроение</h3>
@@ -67,31 +64,32 @@
         </ul>
       </section>
 
-      <section class = "rewiews">
-        <div class = "rewiews__list slider__list">
-          <blockquote class = "rewiews__item slider__item">
-          <cite class = "rewiews__author-name">
+      <section class = "reviews">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class = "reviews__list slider__list">
+          <blockquote class = "reviews__item slider__item">
+            <cite class = "reviews__author-name">
             Николай Петров
-          </cite>
-          <p class = "rewiews__text">
+            </cite>
+            <p class = "reviews__text">
             Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-          </p>
+            </p>
           </blockquote>
-          <blockquote class = "rewiews__item slider__item">
-          <cite class = "rewiews__author-name">
+          <blockquote class = "reviews__item slider__item">
+            <cite class = "reviews__author-name">
             Николай Петров
-          </cite>
-          <p class = "rewiews__text">
+            </cite>
+            <p class = "reviews__text">
             Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-          </p>
+            </p>
           </blockquote>
-          <blockquote class = "rewiews__item slider__item">
-          <cite class = "rewiews__author-name">
+          <blockquote class = "reviews__item slider__item">
+            <cite class = "reviews__author-name">
             Николай Петров
-          </cite>
-          <p class = "rewiews__text">
+            </cite>
+            <p class = "reviews__text">
             Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-          </p>
+            </p>
           </blockquote>
         </div>
         <p class = "reviews__toggles slider__toggles">
@@ -102,39 +100,55 @@
       </section>
 
       <section class = "rates">
+        <h2 class="visually-hidden">Расценки</h2>
         <table class = "rates-table">
           <tr class = "rates-table__header header-line">
             <td class = "header-line__item">
+              <span class = "header-line__name">База</span>
+              <span class = "header-line__price">1.99 USD</span>
             </td>
             <td class = "header-line__item">
+              <span class = "header-line__name">Стандарт</span>
+              <span class = "header-line__price">3.99 USD</span>
             </td>
             <td class = "header-line__item">
+              <span class = "header-line__name">Анлим</span>
+              <span class = "header-line__price">9.99 USD</span>
             </td>
           </tr>
           <tr class = "rates-table__line line-pink">
-            <td class = "line-pink__item">
+            <td class = "rates-table__item">
+              Розовый фильтр
             </td>
-            <td class = "line-pink__item">
+            <td class = "rates-table__item">
+              Розовый фильтр
             </td>
-            <td class = "line-pink__item">
+            <td class = "rates-table__item">
+              Розовый фильтр
             </td>
           </tr>
 
           <tr class = "rates-table__line line-smile">
-            <td class = "line-smile__item">
+            <td class = "rates-table__item">
+              Смайлики
             </td>
-            <td class = "line-smile__item">
+            <td class = "rates-table__item">
+              Смайлики
             </td>
-            <td class = "line-smile__item">
+            <td class = "rates-table__item">
+              Смайлики
             </td>
           </tr>
 
           <tr class = "rates-table__line line-comment">
-            <td class = "line-comment__item">
+            <td class = "rates-table__item">
+              Комментарии
             </td>
-            <td class = "line-comment__item">
+            <td class = "rates-table__item">
+              Комментарии
             </td>
-            <td class = "line-comment__item">
+            <td class = "rates-table__item">
+              Комментарии
             </td>
           </tr>
 
@@ -142,25 +156,22 @@
       </section>
 
       <section class = "contacts">
-        <div class = "contacts__title">
-          Остались вопросы?<br> Свяжитесь с нами!
-        </div>
+        <h2 class="visually-hidden">Контакты</h2>
+        <h3 class = "contacts__title">
+          Остались вопросы? Свяжитесь с нами!
+        </h3>
 
         <div class = "contacts__item contacts__item--phone">
           <p class = "contacts__item-subtitle">
             Звоните:
           </p>
-          <p class = "contacts__item-info">
-            +7(812)555-66-66
-          </p>
+             <a class="contacts__item-info" href="tel:+78125556666">+7(812)555-66-66</a>
         </div>
         <div class = "contacts__item contacts__item--email">
           <p class = "contacts__item-subtitle">
             Пишите:
           </p>
-          <p class = "contacts__item-info">
-            mail@htmlacademy.ru
-          </p>
+            <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class = "contacts__item contacts__item--address">
           <p class = "contacts__item-subtitle">
@@ -173,7 +184,8 @@
       </section>
 
       <section class = "map">
-        <img src = "#" width = "#" height = "#">
+        <h2 class="visually-hidden">Мы на карте</h2>
+        <img src = "#" width = "0" height = "0" alt="Мы на карте">
       </section>
     </main>
   </body>
