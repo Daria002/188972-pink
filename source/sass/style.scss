@@ -1,3 +1,30 @@
-body {
-  background: blue;
-}
+@import "global.scss";
+@import "fonts.scss";
+@import "normalize.scss";
+
+@import "blocks/advantages.scss";
+@import "blocks/button.scss";
+@import "blocks/competition-form.scss";
+@import "blocks/contacts.scss";
+@import "blocks/contacts-group.scss";
+@import "blocks/copyright.scss";
+@import "blocks/download-app.scss";
+@import "blocks/field-title.scss";
+@import "blocks/form.scss";
+@import "blocks/header-line.scss";
+@import "blocks/line-comment.scss";
+@import "blocks/line-pink.scss";
+@import "blocks/line-smile.scss";
+@import "blocks/login-group.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/map.scss";
+@import "blocks/os-group.scss";
+@import "blocks/os-list.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/photo-editor.scss";
+@import "blocks/photos.scss";
+@import "blocks/rates.scss";
+@import "blocks/reviews.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";
