@@ -1,23 +1,22 @@
-body
-{
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 30px;
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    color: #283645;
-    background-color: #fff;
+  color: #283645;
+  background-color: #ffffff;
 }
 
 .visually-hidden {
-    position: absolute;
+  position: absolute;
 
-    clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
