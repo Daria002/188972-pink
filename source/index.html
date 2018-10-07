@@ -37,11 +37,17 @@
       <section class = "download-app">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <a href = "https://itunes.apple.com" class = "download-app__button button">Скачать приложение</a>
-        <div class = "download-app__list os-list">
-            <a class = "os-list__item os-list__item--apple" href = "https://itunes.apple.com"></a>
-            <a class = "os-list__item os-list__item--android" href = "https://play.google.com"></a>
-            <a class = "os-list__item os-list__item--microsoft" href = "https://www.microsoft.com/store/"></a>
-        </div>
+        <ul class = "download-app__list os-list">
+          <li>
+            <a class = "os-list__item os-list__item--apple" href = "https://itunes.apple.com">Apple</a>
+          </li>
+          <li>
+            <a class = "os-list__item os-list__item--android" href = "https://play.google.com">Android</a>
+          </li>
+          <li>
+            <a class = "os-list__item os-list__item--microsoft" href = "https://www.microsoft.com/store/">Microsoft</a>
+          </li>
+        </ul>
         <p class = "download-app__description">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
@@ -187,7 +193,8 @@
 
       <section class = "map">
         <h2 class="visually-hidden">Мы на карте</h2>
-        <img src = "#" width = "0" height = "0" alt="Мы на карте">
+        <div class = "map__img">
+        </div>
       </section>
     </main>
   </body>
