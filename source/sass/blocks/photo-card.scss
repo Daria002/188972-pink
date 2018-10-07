@@ -2,6 +2,12 @@
   font-size: 14px;
   line-height: 24px;
 
+  padding-left: 40px;
+  padding-right: 40px;
+
+  &__image {
+    margin-bottom: 23px;
+  }
 
   &__user-name {
     font-weight: bold;

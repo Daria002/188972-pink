@@ -1,6 +1,10 @@
 .photos {
   background-color: #fff;
 
+  &__subtitle {
+  padding: 53px 20px 55px 20px;
+  }
+
   &__items {
     @include list-reset;
   }

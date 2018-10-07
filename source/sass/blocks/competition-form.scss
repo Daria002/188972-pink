@@ -1,14 +1,35 @@
 .competition-form {
   background-color: #fff;
+  padding: 50px 20px 20px 20px;
+
+  &__login {
+    margin-top: 40px;
+    margin-bottom: 42px;
+  }
 
   &__checkbox {
     background-color: #f2f2f2;
+
+    margin-top: 40px;
+    margin-bottom: 42px;
+  }
+
+  &__contacts {
+    margin-top: 40px;
+    margin-bottom: 42px;
   }
 
   &__radio {
     background-color: #f2f2f2;
+
+    margin-top: 40px;
+    margin-bottom: 42px;
   }
 
+  &__message {
+    margin-top: 40px;
+    margin-bottom: 42px;
+  }
 
   &__send {
     font-size: 18px;
