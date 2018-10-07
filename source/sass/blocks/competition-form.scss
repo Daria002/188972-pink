@@ -1,4 +1,17 @@
-.competition-form__send {
-  font-size: 18px;
-  font-weight: bold;
+.competition-form {
+  background-color: #fff;
+
+  &__checkbox {
+    background-color: #f2f2f2;
+  }
+
+  &__radio {
+    background-color: #f2f2f2;
+  }
+
+
+  &__send {
+    font-size: 18px;
+    font-weight: bold;
+  }
 }

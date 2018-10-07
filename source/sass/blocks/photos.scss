@@ -1,3 +1,11 @@
-.photos__items {
-  @include list-reset;
+.photos {
+  background-color: #fff;
+
+  &__items {
+    @include list-reset;
+  }
+
+  &__item {
+    background-color: #f2f2f2;
+  }
 }

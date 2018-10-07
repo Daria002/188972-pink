@@ -1,16 +1,20 @@
-.contacts__title {
-  font-size: 24px;
-  font-weight: light;
-}
+.contacts {
+  background-color: #fff;
 
-.contacts__item-subtitle {
-  font-size: 18px;
-  font-weight: bold;
-}
+  &__title {
+    font-size: 24px;
+    font-weight: light;
+  }
 
-.contacts__item-info {
-  font-size: 24px;
-  font-weight: lighter;
+  &__item-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+  }
 
-  color: #d22856;
+  &__item-info {
+    font-size: 24px;
+    font-weight: lighter;
+
+    color: #d22856;
+  }
 }

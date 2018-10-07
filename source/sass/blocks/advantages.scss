@@ -1,19 +1,27 @@
-.advantages__rhetiric {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: lighter;
-}
+.advantages {
+  background-color: #f2f2f2;
 
-.advantages__header {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
+  &__promo {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: lighter;
+  }
 
-  color: #000;
-}
+  &__header {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
 
-.advantages__decription {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
+    color: #000;
+  }
+
+  &__decription {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  &__list {
+    @include list-reset;
+  }
 }

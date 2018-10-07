@@ -1,6 +1,10 @@
-.rates-table__item {
-  font-size: 14px;
-  line-height: 30px;
+.rates {
+  background-color: #f2f2f2;
 
-  color: #000;
+  &__item {
+    font-size: 14px;
+    line-height: 30px;
+
+    color: #000;
+  }
 }
