@@ -1,0 +1,15 @@
+.photos {
+  background-color: #ffffff;
+}
+
+.photos__subtitle {
+  padding: 53px 20px 55px 20px;
+}
+
+.photos__items {
+  @include list-reset;
+}
+
+.photos__item {
+  background-color: #f2f2f2;
+}
