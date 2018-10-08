@@ -1,3 +1,26 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $bg-darkblue;
+}
+
+.page-header__logo {
+  height: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    height: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page.header__logo {
+    height: 110px;
+  }
+}
+
 .page-header__photo {
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
